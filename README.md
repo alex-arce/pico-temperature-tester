@@ -1,6 +1,6 @@
 # pico-temperature-tester
 
-Compilation:
+#### Compilation:
 ```
 git clone https://github.com/alex-arce/pico-temperature-tester.git
 cd pico-temperature-tester
@@ -12,3 +12,9 @@ make
 ```
 
 Now you can copy the generated .uf2 file inside 'build/' to your Raspberry Pico :-D
+
+#### Output
+```
+Linux: 
+$ minicom -b 115200 -o -D /dev/ttyACM0
+```
