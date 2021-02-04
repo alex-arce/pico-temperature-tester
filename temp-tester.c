@@ -5,6 +5,7 @@
 #include "pico/binary_info.h" 
 
 const uint LED_PIN = 25; 
+const uint ADC_TEMP_SENSOR = 4; 
 
 int main() {
 
@@ -14,7 +15,7 @@ int main() {
     stdio_init_all();
     adc_init();
     adc_set_temp_sensor_enabled(true);
-    adc_select_input(4);
+    adc_select_input(ADC_TEMP_SENSOR);
 
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
